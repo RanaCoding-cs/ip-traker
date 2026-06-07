@@ -33,7 +33,5 @@
 
 <sub>Optimized for Termux Mobile Terminal Environments</sub>
 </p>
-"""
-​with open("Readme-v2.md", "w", encoding="utf-8") as f:
-f.write(readme_v2_content)
-print("Readme-v2.md created successfully.")
+
+
