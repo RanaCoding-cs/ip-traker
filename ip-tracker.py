@@ -31,7 +31,7 @@ def show_banner():
 ​        🔗 GitHub Link: https://github.com/RanaCoding-cs
      ⚠️ Disclaimer: Educational purpose only! | Happy Coding 
 """
-    print(banner) # এখানে ইন্ডেন্টেশন ঠিক করা হয়েছে
+    print(banner)
     print(f"{CYAN}====================================================================={RESET}")
 
 def trace_ip(ip_address):
