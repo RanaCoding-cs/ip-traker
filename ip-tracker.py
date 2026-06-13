@@ -17,7 +17,7 @@ def clear_screen():
 def show_banner():
     # প্রতিবার নতুন আইপি খোঁজার আগে স্ক্রিন পরিষ্কার করবে
     clear_screen()
-    print(f"{CYAN}==================================================")
+
     # ব্যানারের ব্যাকস্ল্যাশের কারণে যাতে ওয়ার্নিং না আসে সেজন্য 'r' ব্যবহার করা হয়েছে
     banner = r"""
 ██╗██████╗  ████████╗██████╗  █████╗  ██████╗██╗  ██╗███████╗██████╗ 
@@ -27,9 +27,12 @@ def show_banner():
 ██║██║         ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
 ╚═╝╚═╝         ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
                 Real-Time IP Geolocation Tracker
+          Author: RanaCoding-cs | Developer: RANA VHAI
+​        🔗 GitHub Link: https://github.com/RanaCoding-cs
+     ⚠️ Disclaimer: Educational purpose only! | Happy Coding 
 """
     print(banner) # এখানে ইন্ডেন্টেশন ঠিক করা হয়েছে
-    print(f"=================================================={RESET}")
+    print(f"{CYAN}====================================================================={RESET}")
 
 def trace_ip(ip_address):
     # লাইভ জিওলোকেশন ডেটাবেজ এপিআই ইউআরএল
@@ -73,12 +76,12 @@ if __name__ == "__main__":
     while True:
         show_banner()
         # ইউজারের কাছ থেকে ইংরেজি প্রম্পটে ইনপুট নেওয়া হচ্ছে
-        print(f"{YELLOW}[+] Enter Public IP (Leave empty for your own IP)")
+        print(f"{GREEN}[+] Enter Public IP (Leave empty for your own IP)")
         ip_input = input(f"[+] Type 'exit' to close the tool: {RESET}").strip()
 
         # ইউজার যদি exit লেখে তবে লুপটি ভেঙে স্ক্রিপ্ট বন্ধ হয়ে যাবে
         if ip_input.lower() == 'exit':
-            print(f"\n{YELLOW}[*] Thank you for using IP Tracker! Goodbye.{RESET}\n")
+            print(f"\n{CYAN}[*] Thank you for using IP Tracker! Goodbye.{RESET}\n")
             break
 
         # ট্র্যাকিং ফাংশনকে কল করা হচ্ছে
